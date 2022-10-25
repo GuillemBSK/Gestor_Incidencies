@@ -7,12 +7,12 @@
     android:background="#6200ED">
 
     <LinearLayout
-        android:layout_width="396dp"
-        android:layout_height="787dp"
+        android:layout_width="389dp"
+        android:layout_height="784dp"
         android:background="#721BFF"
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="-2dp">
+        tools:layout_editor_absoluteX="2dp">
 
         <Space
             android:layout_width="match_parent"
