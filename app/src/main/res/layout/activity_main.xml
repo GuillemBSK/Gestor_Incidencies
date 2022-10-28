@@ -32,7 +32,7 @@
             android:layout_height="24dp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/main_nova_inci"
             android:layout_width="315dp"
             android:layout_height="60dp"
             android:layout_gravity="center|center_vertical"
@@ -42,7 +42,7 @@
             android:textSize="15dp" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/main_llista_inci"
             android:layout_width="315dp"
             android:layout_height="60dp"
             android:layout_gravity="center|center_vertical"
@@ -51,7 +51,7 @@
             android:textSize="15dp" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/main_inci_resoltes"
             android:layout_width="315dp"
             android:layout_height="60dp"
             android:layout_gravity="center|center_vertical"
