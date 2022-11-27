@@ -47,7 +47,7 @@
             android:layout_gravity="center"
             android:background="#00FBFBFB"
             android:fontFamily="sans-serif-condensed"
-            android:text="NOM D'USUARI; "
+            android:text="NOM D'USUARI: "
             android:textAlignment="textStart"
             android:textAllCaps="false"
             android:textColor="#FFFFFF" />
@@ -138,7 +138,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="sans-serif-condensed"
-                android:text="INDICA L'UBICACIÓ;"
+                android:text="INDICA L'UBICACIÓ:"
                 android:textAlignment="viewStart"
                 android:textColor="@color/white" />
 
@@ -167,7 +167,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="sans-serif-condensed"
-                android:text="DESCRIPCIÓ DE L'INCIDÈNCIA;"
+                android:text="DESCRIPCIÓ DE L'INCIDÈNCIA:"
                 android:textAlignment="viewStart"
                 android:textColor="@color/white" />
 
@@ -195,7 +195,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="sans-serif-condensed"
-                android:text="DATA DE L'INCIDÈNCIA;"
+                android:text="DATA ACTUAL:"
                 android:textAlignment="viewStart"
                 android:textColor="@color/white" />
 
@@ -207,7 +207,7 @@
 
                 <EditText
                     android:id="@+id/ni_data"
-                    android:layout_width="184dp"
+                    android:layout_width="155dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:backgroundTint="@color/white"
@@ -220,7 +220,7 @@
 
                 <CheckBox
                     android:id="@+id/checkResolt"
-                    android:layout_width="178dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:checked="false"
                     android:gravity="center"
