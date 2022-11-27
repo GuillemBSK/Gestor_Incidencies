@@ -52,6 +52,7 @@
             android:layout_height="60dp"
             android:layout_gravity="center|center_vertical"
             android:fontFamily="sans-serif-condensed"
+            android:onClick="btnView"
             android:text="Llista d'incidències"
             android:textSize="15dp"
             app:strokeColor="#FFFFFF"

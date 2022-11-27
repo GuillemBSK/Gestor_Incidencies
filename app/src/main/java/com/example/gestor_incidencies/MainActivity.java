@@ -14,13 +14,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button next = (Button) findViewById(R.id.main_nova_inci);
-        next.setOnClickListener(new View.OnClickListener() {
+        Button nova_incidencia_btn = (Button) findViewById(R.id.main_nova_inci);
+        nova_incidencia_btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent myIntent = new Intent(view.getContext(), NovaIncidencia.class);
                 startActivityForResult(myIntent, 0);
             }
 
         });
+    }
+
+    public void btnView(View v){
+        Intent intent = new Intent(MainActivity.this, LlistaIncidencies.class);
+        startActivity(intent);
     }
 }

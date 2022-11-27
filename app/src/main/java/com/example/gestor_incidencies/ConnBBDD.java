@@ -12,7 +12,7 @@ public class ConnBBDD extends SQLiteOpenHelper {
 
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NAME = "incidencies";
-    private static final String CREATE_TABLE = "CREATE TABLE tickets(id INTEGER PRIMARY KEY AUTOINCREMENT, nom TEXT, element TEXT, ubicacio TEXT, descripcio TEXT, data DATE)";
+    private static final String CREATE_TABLE = "CREATE TABLE tickets(id INTEGER PRIMARY KEY AUTOINCREMENT, nom TEXT, element TEXT, tipus_element TEXT, ubicacio TEXT, descripcio TEXT, data DATE, resolt BOOLEAN)";
 
     @Override
     public void onCreate(SQLiteDatabase db) {

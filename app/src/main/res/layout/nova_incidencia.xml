@@ -22,10 +22,10 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="62dp" />
+            android:layout_height="46dp" />
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/titolLlista"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-condensed"
@@ -199,20 +199,37 @@
                 android:textAlignment="viewStart"
                 android:textColor="@color/white" />
 
-        </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
 
-        <EditText
-            android:id="@+id/ni_data"
-            android:layout_width="307dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:backgroundTint="@color/white"
-            android:ems="10"
-            android:fontFamily="sans-serif-condensed"
-            android:hint="Introdueix la data"
-            android:inputType="date"
-            android:textColor="@color/white"
-            android:textColorHint="#FFFFFF" />
+                <EditText
+                    android:id="@+id/ni_data"
+                    android:layout_width="184dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/white"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="Introdueix la data"
+                    android:inputType="date"
+                    android:textColor="@color/white"
+                    android:textColorHint="#FFFFFF" />
+
+                <CheckBox
+                    android:id="@+id/checkResolt"
+                    android:layout_width="178dp"
+                    android:layout_height="match_parent"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="Incidència resolta?"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Space
             android:layout_width="match_parent"

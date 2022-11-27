@@ -14,10 +14,11 @@ public class Model {
 
     int insertaIncidencia(Context context, Incidencia incidencia){
         int res = 0;
-        String query = "INSERT INTO tickets(nom,element,ubicacio,descripcio,data) VALUES ('"+incidencia.getNom()+"','"+incidencia.getElement()+"','"+incidencia.getUbicacio()+"','"+incidencia.getDescripcio()+"','"+incidencia.getData()+"')";
+        String query = "INSERT INTO tickets(nom,element,tipus_element,ubicacio,descripcio,data,resolt) VALUES ('"+incidencia.getNom()+"','"+incidencia.getElement()+"','"+incidencia.getTipus_element()+"','"+incidencia.getUbicacio()+"','"+incidencia.getDescripcio()+"','"+incidencia.getData()+"','"+incidencia.getResolt()+"')";
         SQLiteDatabase db = this.getConn(context);
         try{
             db.execSQL(query);
+            res = 1;
         }catch(SQLException sqle){
             System.out.println(sqle);
         }
