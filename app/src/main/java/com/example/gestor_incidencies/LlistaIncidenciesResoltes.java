@@ -11,32 +11,28 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class LlistaIncidencies extends AppCompatActivity {
+public class LlistaIncidenciesResoltes extends AppCompatActivity {
 
-    @SuppressLint({"ResourceType", "MissingInflatedId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.llista_incidencies);
+        setContentView(R.layout.llista_incidencies_resoltes);
 
-        ListView listView = findViewById(R.id.listView);
-
-        ArrayList<String> llista = getIncidencies();
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.llista_item,llista);
+        ListView listView = findViewById(R.id.listViewResoltes);
+        ArrayList<String> llista = getIncidenciesResoltes();
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.llista_item_resoltes,llista);
         listView.setAdapter(adapter);
-
-
     }
 
     @SuppressLint("Range")
-    public ArrayList<String> getIncidencies(){
+    public ArrayList<String> getIncidenciesResoltes(){
         ArrayList<String> llista = new ArrayList<>();
         ConnBBDD conn = new ConnBBDD(this,"incidencies",null,1);
         SQLiteDatabase db = conn.getWritableDatabase();
 
         Cursor cursor = db.query("tickets",
                 null,
-                null,
+                "resolt=='true'",
                 null,
                 null,
                 null,
@@ -51,7 +47,6 @@ public class LlistaIncidencies extends AppCompatActivity {
             llista.add("Element: "+cursor.getString(cursor.getColumnIndex("element")));
             llista.add("Tipus: "+cursor.getString(cursor.getColumnIndex("tipus_element")));
             llista.add("\uD83D\uDCAC: "+cursor.getString(cursor.getColumnIndex("descripcio")));
-            llista.add("✅❔: "+cursor.getString(cursor.getColumnIndex("resolt")));
         }
 
         return llista;

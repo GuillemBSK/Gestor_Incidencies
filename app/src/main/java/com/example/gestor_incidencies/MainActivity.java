@@ -20,12 +20,16 @@ public class MainActivity extends AppCompatActivity {
                 Intent myIntent = new Intent(view.getContext(), NovaIncidencia.class);
                 startActivityForResult(myIntent, 0);
             }
-
         });
     }
 
     public void btnView(View v){
         Intent intent = new Intent(MainActivity.this, LlistaIncidencies.class);
+        startActivity(intent);
+    }
+
+    public void btnViewResoltes(View v){
+        Intent intent = new Intent(MainActivity.this, LlistaIncidenciesResoltes.class);
         startActivity(intent);
     }
 }

@@ -28,7 +28,7 @@ public class NovaIncidencia extends AppCompatActivity {
                 EditText ubicacio = findViewById(R.id.ni_ubicacio);
                 EditText descripcio = findViewById(R.id.ni_descripcio);
                 EditText data = findViewById(R.id.ni_data);
-                Boolean resolt = findViewById(R.id.checkResolt).isEnabled();
+                Boolean resolt = ((CheckBox) findViewById(R.id.checkResolt)).isChecked();
                 EditText tipus_element = findViewById(R.id.ni_tipus_element);
 
                 inc.setNom(nom.getText().toString());

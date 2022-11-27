@@ -222,7 +222,7 @@
                     android:id="@+id/checkResolt"
                     android:layout_width="178dp"
                     android:layout_height="match_parent"
-                    android:checked="true"
+                    android:checked="false"
                     android:gravity="center"
                     android:text="Incidència resolta?"
                     android:textAlignment="center"
@@ -258,15 +258,6 @@
                 android:layout_width="20dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
-
-            <Button
-                android:id="@+id/ni_enrere"
-                android:layout_width="167dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:backgroundTint="@color/white"
-                android:text="Enrere"
-                android:textColor="#673AB7" />
 
         </LinearLayout>
 

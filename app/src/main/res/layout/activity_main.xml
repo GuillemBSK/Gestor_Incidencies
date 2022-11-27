@@ -64,6 +64,7 @@
             android:layout_height="60dp"
             android:layout_gravity="center|center_vertical"
             android:fontFamily="sans-serif-condensed"
+            android:onClick="btnViewResoltes"
             android:text="Incidències resoltes"
             android:textSize="15dp"
             app:strokeColor="#FFFFFF"
