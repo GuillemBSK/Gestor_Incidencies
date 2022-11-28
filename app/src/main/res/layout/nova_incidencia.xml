@@ -207,7 +207,7 @@
 
                 <EditText
                     android:id="@+id/ni_data"
-                    android:layout_width="155dp"
+                    android:layout_width="151dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:backgroundTint="@color/white"
@@ -220,7 +220,7 @@
 
                 <CheckBox
                     android:id="@+id/checkResolt"
-                    android:layout_width="wrap_content"
+                    android:layout_width="192dp"
                     android:layout_height="match_parent"
                     android:checked="false"
                     android:gravity="center"
@@ -229,37 +229,18 @@
                     android:textColor="#FFFFFF" />
             </LinearLayout>
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
         </com.google.android.material.textfield.TextInputLayout>
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="37dp" />
-
-        <LinearLayout
-            android:layout_width="369dp"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <Space
-                android:layout_width="15dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-            <Button
-                android:id="@+id/ni_enviar"
-                android:layout_width="161dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:backgroundTint="@color/white"
-                android:text="ENVIAR"
-                android:textColor="#673AB7" />
-
-            <Space
-                android:layout_width="20dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-        </LinearLayout>
+        <ImageButton
+            android:id="@+id/ni_enviar"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@android:drawable/ic_menu_send" />
 
     </LinearLayout>
 
