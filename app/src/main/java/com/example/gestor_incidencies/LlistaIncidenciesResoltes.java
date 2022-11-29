@@ -45,7 +45,7 @@ public class LlistaIncidenciesResoltes extends AppCompatActivity {
             llista.add("📅: "+cursor.getString(cursor.getColumnIndex("data")));
             llista.add("\uD83D\uDCCD: "+cursor.getString(cursor.getColumnIndex("ubicacio")));
             llista.add("Element: "+cursor.getString(cursor.getColumnIndex("element")));
-            llista.add("Tipus: "+cursor.getString(cursor.getColumnIndex("tipus_element")));
+            llista.add("Tipus d'element: "+cursor.getString(cursor.getColumnIndex("tipus_element")));
             llista.add("\uD83D\uDCAC: "+cursor.getString(cursor.getColumnIndex("descripcio")));
         }
 
